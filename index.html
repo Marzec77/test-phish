@@ -34,10 +34,13 @@
   </p>
 
   <p>Dziękuję za pomoc w badaniach<br><br>Piotr Marzec</p>
+  
+    <script>
+  const identyfikator = Math.random().toString(36).substring(2);
+  fetch("https://script.google.com/macros/s/TWÓJ_SKRYPT/exec?client=" + 
+        encodeURIComponent(navigator.userAgent + " | " + identyfikator));
+</script>
 
-  <script>
-    fetch("https://script.google.com/macros/s/AKfycbxFd4MAfgg5FS-KMVGg_UMdNL1h5afaWT8b26Ral3YRBU9p3-BHSQUulx-JjDCqjJKGgw/exec" + 
-           encodeURIComponent(navigator.userAgent));
-  </script>
+
 </body>
 </html>
